@@ -10,7 +10,7 @@
 @theme {
     --font-heading: 'Plus Jakarta Sans', sans-serif;
     --font-body: 'Outfit', sans-serif;
-    --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif; /* Set Outfit as default sans */
+    --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
 
     --color-navbar-bg: #ffffff;
     --color-navbar-bg-dark: #2D1B54;
@@ -38,4 +38,43 @@
     --color-bento-alumni-dark: #1E293B;
     --color-bento-progja-dark: #A497BE;
     --color-bento-border: #334155;
+
+    --color-doc-header: #7C3AED;
+    --color-doc-header-dark: #A78BFA;
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+.animate-scroll-left {
+    animation: scroll-left 60s linear infinite;
+}
+
+.animate-scroll-right {
+    animation: scroll-right 60s linear infinite;
+}
+
+/* Pause State (Active via JS) */
+.is-paused .animate-scroll-left,
+.is-paused .animate-scroll-right {
+    animation-play-state: paused;
+}
+
+/* Active Item Z-Index */
+.carousel-item.active {
+    z-index: 50;
+    transform: scale(1.1);
+}
+
+/* Label Visibility on Active */
+.carousel-item.active .carousel-label {
+    opacity: 1;
+    pointer-events: auto;
 }
