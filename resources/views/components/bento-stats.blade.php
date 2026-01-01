@@ -1,4 +1,4 @@
-<section class="py-12 bg-main-bg dark:bg-main-bg-dark transition-colors duration-300">
+<section class="py-50 bg-main-bg dark:bg-main-bg-dark transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
@@ -19,7 +19,7 @@
                 </div>
 
                 <div class="relative z-10 mt-12">
-                     <p class="text-white/90 font-body text-base leading-relaxed">
+                    <p class="text-white/90 font-body text-base leading-relaxed">
                         Wadah berkumpulnya ratusan "Cah Kediri" yang tersebar di berbagai fakultas dan jurusan Universitas Negeri Malang
                     </p>
                 </div>
@@ -30,11 +30,11 @@
                         bg-white dark:bg-bento-progja-dark shadow-lg">
 
                 <!-- Icon Decoration -->
-                 <div class="absolute top-4 right-4 opacity-40">
-                     <svg class="w-16 h-16 text-secondary dark:text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                     </svg>
-                 </div>
+                <div class="absolute top-4 right-4 opacity-40">
+                    <svg class="w-16 h-16 text-secondary dark:text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
 
                 <div class="flex-shrink-0">
                     <span class="text-5xl font-extrabold text-accent dark:text-white font-heading">5+</span>
@@ -52,16 +52,16 @@
             <div class="lg:col-span-2 rounded-3xl p-8 flex flex-col md:flex-row items-start md:items-center gap-6 relative overflow-hidden group transition-all hover:scale-[1.01] duration-300
                         bg-bento-alumni dark:bg-bento-alumni-dark border-0 dark:border-[3px] dark:border-bento-border shadow-lg">
 
-                 <!-- Icon Decoration -->
-                 <div class="absolute top-4 right-4 opacity-40">
-                     <svg class="w-16 h-16 text-accent dark:text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                     </svg>
-                 </div>
+                <!-- Icon Decoration -->
+                <div class="absolute top-4 right-4 opacity-40">
+                    <svg class="w-16 h-16 text-accent dark:text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                    </svg>
+                </div>
 
                 <div class="flex-grow z-10">
                     <h3 class="text-3xl font-bold text-accent dark:text-bento-purple-dark dark:text-white font-heading mb-3">Jaringan Alumni</h3>
-                     <!-- Note: Dark mode text for Alumni heading wasn't explicitly clear on contrast, inferred White/Light based on dark BG -->
+                    <!-- Note: Dark mode text for Alumni heading wasn't explicitly clear on contrast, inferred White/Light based on dark BG -->
                     <p class="text-primary-text/80 dark:text-gray-300 font-body text-base">
                         Terhubung langsung dengan ribuan alumni UM asal Kediri yang telah sukses berkarier di berbagai bidang profesional
                     </p>

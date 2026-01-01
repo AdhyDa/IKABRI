@@ -31,7 +31,7 @@
             <!-- Right Content (Image) -->
             <div class="relative lg:h-full flex justify-center lg:justify-end">
                 <!-- Badge -->
-                <div class="absolute top-6 right-6 z-20 transform rotate-3 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg border border-gray-100 dark:border-gray-700">
+                <div class="absolute top-6 right-6 z-20 transform rotate-3 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg border border-gray-100">
                     <span class="text-secondary font-bold text-sm">500+ Alumni di Malang</span>
                 </div>
 
