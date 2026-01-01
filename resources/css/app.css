@@ -1,11 +1,41 @@
 @import 'tailwindcss';
 
+@variant dark (&:where(.dark, .dark *));
+
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-heading: 'Plus Jakarta Sans', sans-serif;
+    --font-body: 'Outfit', sans-serif;
+    --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif; /* Set Outfit as default sans */
+
+    --color-navbar-bg: #ffffff;
+    --color-navbar-bg-dark: #2D1B54;
+
+    --color-hero-gradient-start: #7C3AED;
+    --color-hero-gradient-start-dark: #431E82;
+
+    --color-hero-gradient-end: #ffffff;
+    --color-hero-gradient-end-dark: #ffffff;
+
+    --color-main-bg: #E9E6FA;
+    --color-main-bg-dark: #0F172A;
+
+    --color-primary-text: #0F172A;
+    --color-primary-text-dark: #F8FAFC;
+
+    --color-secondary: #F59E0B;
+
+    --color-accent: #7C3AED;
+    --color-accent-dark: #A78BFA;
+
+    --color-bento-purple: #7C3AED;
+    --color-bento-purple-dark: #431E82;
+    --color-bento-alumni: #D6CEFF;
+    --color-bento-alumni-dark: #1E293B;
+    --color-bento-progja-dark: #A497BE;
+    --color-bento-border: #334155;
 }
