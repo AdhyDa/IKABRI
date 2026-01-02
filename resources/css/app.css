@@ -41,6 +41,24 @@
 
     --color-doc-header: #7C3AED;
     --color-doc-header-dark: #A78BFA;
+
+    /* Update & Agenda Section */
+    --color-ua-section-bg: #7C3AED;
+    --color-ua-section-bg-dark: #745FB3;
+
+    --color-ua-card-bg: #ffffff;
+    --color-ua-card-bg-dark: #D5CAE9;
+
+    --color-ua-text: #1E1B4B;
+    --color-ua-text-dark: #373279;
+
+    --color-ua-tag-bg: #D9D9D9;
+    --color-ua-tag-bg-dark: #E9E2F4;
+
+    --color-ua-tag-text: #F59E0B;
+
+    --color-ua-inactive: #431E82;
+    --color-ua-inactive-dark: #251246;
 }
 
 @keyframes scroll-left {
