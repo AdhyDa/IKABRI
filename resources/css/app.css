@@ -59,6 +59,15 @@
 
     --color-ua-inactive: #431E82;
     --color-ua-inactive-dark: #251246;
+
+    /* Footer Section */
+    --color-footer-bg: #7C3AED;
+    --color-footer-bg-dark: #5A28AF;
+
+    --color-footer-bottom: #431E82;
+    --color-footer-bottom-dark: #251246;
+
+    --color-footer-text: #ffffff;
 }
 
 @keyframes scroll-left {
