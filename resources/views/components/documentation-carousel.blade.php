@@ -10,8 +10,7 @@
     </div>
 
     <!-- Carousel Container -->
-    <div id="doc-carousel-container" class="relative w-full space-y-8">
-
+    <div id="doc-carousel-container" class="relative w-full space-y-8 py-10">
         <!-- Row 1: Right to Left -->
         <div class="flex space-x-6 w-max animate-scroll-left">
             <!-- Part 1: Items 1-5 -->
@@ -100,7 +99,7 @@
         </div>
 
         <!-- Row 2: Left to Right -->
-        <div class="flex space-x-6 w-max animate-scroll-right">
+        <div class="flex space-x-6 w-max animate-scroll-right pt-15">
             <!-- Part 1: Items 6-10 -->
             <div class="relative group cursor-pointer transition-transform duration-300 hover:scale-105 carousel-item" onclick="toggleFocus(this)">
                 <div class="w-80 h-56 rounded-2xl overflow-hidden shadow-[0_10px_30px_-5px_rgba(0,0,0,0.3)] dark:shadow-[0_10px_30px_-5px_rgba(124,58,237,0.3)]">
