@@ -14,15 +14,15 @@
 
                 <!-- Social Icons (Horizontal Circle) -->
                 <div class="flex space-x-4">
-                    <a href="#" class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[var(--color-footer-bg)] transition-colors duration-300">
+                    <a href="https://www.instagram.com/ikabri_um" class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[var(--color-footer-bg)] transition-colors duration-300">
                         <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
                             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                             <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
                         </svg>
                     </a>
-                    <a href="#" class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[var(--color-footer-bg)] transition-colors duration-300">
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <a href="https://www.tiktok.com/@ikabri_um" class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[var(--color-footer-bg)] transition-colors duration-300">
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                             <g id="SVGRepo_iconCarrier">
@@ -30,19 +30,19 @@
                             </g>
                         </svg>
                     </a>
-                    <a href="#" class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[var(--color-footer-bg)] transition-colors duration-300">
+                    <a href="https://x.com/IkabriUm?s=20" class="w-10 h-10 p-3 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[var(--color-footer-bg)] transition-colors duration-300">
                         <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path
-                                d="M7.3418 1L12.8838 8.86328L13.6172 9.9043L14.4551 8.94434L21.3848 1H21.8008L14.3193 9.57617L13.8037 10.168L14.2559 10.8096L22.6592 22.7295C22.7058 22.7968 22.7181 22.9016 22.6777 22.9883C22.6758 22.9934 22.6719 22.9963 22.6699 23H16.6523L11.1094 15.1377L10.376 14.0967L9.53906 15.0566L2.60938 23H2.19336L9.67383 14.4248L10.1904 13.833L9.7373 13.1914L1.33496 1.27051C1.28801 1.20391 1.27502 1.09836 1.31543 1.01172C1.31748 1.00733 1.32109 1.00397 1.32324 1H7.3418Z" stroke="currentColor" stroke-width="2"/>
+                                d="M7.3418 1L12.8838 8.86328L13.6172 9.9043L14.4551 8.94434L21.3848 1H21.8008L14.3193 9.57617L13.8037 10.168L14.2559 10.8096L22.6592 22.7295C22.7058 22.7968 22.7181 22.9016 22.6777 22.9883C22.6758 22.9934 22.6719 22.9963 22.6699 23H16.6523L11.1094 15.1377L10.376 14.0967L9.53906 15.0566L2.60938 23H2.19336L9.67383 14.4248L10.1904 13.833L9.7373 13.1914L1.33496 1.27051C1.28801 1.20391 1.27502 1.09836 1.31543 1.01172C1.31748 1.00733 1.32109 1.00397 1.32324 1H7.3418Z"/>
                         </svg>
                     </a>
-                    <a href="#" class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[var(--color-footer-bg)] transition-colors duration-300">
+                    <a href="https://www.youtube.com/channel/UCdHr5uZo9fo6te0K8hfvXXw" class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[var(--color-footer-bg)] transition-colors duration-300">
                         <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
                             <path d="m10 15 5-3-5-3z"/>
                         </svg>
                     </a>
-                    <a href="#" class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[var(--color-footer-bg)] transition-colors duration-300">
+                    <a href="https://www.facebook.com/IkatanBocahKediri.UM" class="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[var(--color-footer-bg)] transition-colors duration-300">
                         <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                         </svg>
@@ -54,7 +54,7 @@
             <div>
                 <h3 class="text-2xl font-bold font-heading mb-6">Menu</h3>
                 <ul class="space-y-4 font-body opacity-90">
-                    <li><a href="#" class="hover:underline hover:opacity-100 transition-opacity">Beranda</a></li>
+                    <li><a href="/" class="hover:underline hover:opacity-100 transition-opacity">Beranda</a></li>
                     <li><a href="#" class="hover:underline hover:opacity-100 transition-opacity">Profil</a></li>
                     <li><a href="#" class="hover:underline hover:opacity-100 transition-opacity">Program Kerja</a></li>
                     <li><a href="#" class="hover:underline hover:opacity-100 transition-opacity">Galeri</a></li>
@@ -65,11 +65,11 @@
             <div>
                 <h3 class="text-2xl font-bold font-heading mb-6">Social</h3>
                 <ul class="space-y-4 font-body opacity-90">
-                    <li><a href="#" class="hover:underline hover:opacity-100 transition-opacity">Instagram</a></li>
-                    <li><a href="#" class="hover:underline hover:opacity-100 transition-opacity">Tiktok</a></li>
-                    <li><a href="#" class="hover:underline hover:opacity-100 transition-opacity">X</a></li>
-                    <li><a href="#" class="hover:underline hover:opacity-100 transition-opacity">YouTube</a></li>
-                    <li><a href="#" class="hover:underline hover:opacity-100 transition-opacity">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/ikabri_um" class="hover:underline hover:opacity-100 transition-opacity">Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@ikabri_um" class="hover:underline hover:opacity-100 transition-opacity">Tiktok</a></li>
+                    <li><a href="https://x.com/IkabriUm?s=20" class="hover:underline hover:opacity-100 transition-opacity">X</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCdHr5uZo9fo6te0K8hfvXXw" class="hover:underline hover:opacity-100 transition-opacity">YouTube</a></li>
+                    <li><a href="https://www.facebook.com/IkatanBocahKediri.UM" class="hover:underline hover:opacity-100 transition-opacity">Facebook</a></li>
                 </ul>
             </div>
 

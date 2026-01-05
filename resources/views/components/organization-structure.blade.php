@@ -18,7 +18,6 @@
                     <div class="w-16 h-16 mx-auto mb-4 bg-orange-100 rounded-full flex items-center justify-center text-[var(--color-secondary)]">
                         <img src="{{ asset('image/bph.png') }}" alt="BPH" class="w-full h-full object-cover transition-all duration-300 border-[2px] border-[var(--color-secondary)] rounded-[999px]" loading="lazy">
                     </div>
-
                     <h3 class="text-2xl font-bold font-heading text-[var(--color-secondary)] mb-2">
                         Badan Pengurus Harian (BPH)
                     </h3>

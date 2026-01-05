@@ -13,7 +13,7 @@
 
             <div class="hidden lg:flex items-center space-x-8">
                 <div class="flex space-x-6">
-                    <x-nav-link href="#" active>
+                    <x-nav-link href="/" active>
                         Beranda
                         <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </x-nav-link>

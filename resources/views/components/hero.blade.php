@@ -30,11 +30,6 @@
 
             <!-- Right Content (Image) -->
             <div class="relative lg:h-full flex justify-center lg:justify-end">
-                <!-- Badge -->
-                <div class="absolute top-6 right-6 z-20 transform rotate-3 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg border border-gray-100">
-                    <span class="text-secondary font-bold text-sm">500+ Alumni di Malang</span>
-                </div>
-
                 <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/30 dark:border-white/10 w-full max-w-lg aspect-[4/3] group">
                     <div class="absolute inset-0 bg-gray-200 animate-pulse"></div>
                     <!-- Placeholder Image -->
