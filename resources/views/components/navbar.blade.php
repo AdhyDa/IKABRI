@@ -13,11 +13,11 @@
 
             <div class="hidden lg:flex items-center space-x-8">
                 <div class="flex space-x-6">
-                    <x-nav-link href="/" active>
+                    <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
                         Beranda
                         <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </x-nav-link>
-                    <x-nav-link href="#">
+                    <x-nav-link href="{{ route('profil') }}" :active="request()->routeIs('profil')">
                         Profil
                         <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </x-nav-link>
@@ -71,8 +71,8 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden lg:hidden absolute top-20 left-0 w-full bg-navbar-bg dark:bg-navbar-bg-dark border-b border-gray-100 dark:border-gray-800 shadow-xl">
         <div class="px-2 pt-2 pb-3 space-y-1">
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-secondary hover:bg-gray-50 dark:hover:bg-gray-800">Beranda</a>
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-primary-text dark:text-primary-text-dark hover:text-secondary hover:bg-gray-50 dark:hover:bg-gray-800">Profil</a>
+            <a href="{{ route('home') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('home') ? 'text-secondary' : 'text-primary-text dark:text-primary-text-dark hover:text-secondary' }} hover:bg-gray-50 dark:hover:bg-gray-800">Beranda</a>
+            <a href="{{ route('profil') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('profil') ? 'text-secondary' : 'text-primary-text dark:text-primary-text-dark hover:text-secondary' }} hover:bg-gray-50 dark:hover:bg-gray-800">Profil</a>
             <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-primary-text dark:text-primary-text-dark hover:text-secondary hover:bg-gray-50 dark:hover:bg-gray-800">Proker</a>
             <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-primary-text dark:text-primary-text-dark hover:text-secondary hover:bg-gray-50 dark:hover:bg-gray-800">Galeri</a>
         </div>
