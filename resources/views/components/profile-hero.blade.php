@@ -1,4 +1,4 @@
-<section class="relative bg-[#F4F1FF] dark:bg-main-bg-dark transition-colors duration-300 py-12 md:py-20 lg:py-5 overflow-hidden">
+<section class="relative bg-[--color-main-bg] dark:bg-main-bg-dark transition-colors duration-300 py-12 md:py-20 lg:py-5 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
         <!-- Main Outside Heading -->
         <h1 class="text-3xl md:text-5xl font-extrabold font-heading text-primary-text dark:text-primary-text-dark leading-[2.3]">
