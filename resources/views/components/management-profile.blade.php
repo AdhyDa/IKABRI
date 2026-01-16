@@ -125,14 +125,14 @@
                 layout: 'standard',
                 members: [
                     // TOP 2 LEADERS
-                    { name: 'KETUA PENALARAN', role: 'Ketua Divisi', img: 'placeholder.jpg' },
-                    { name: 'SEKRETARIS PENALARAN', role: 'Sekretaris Divisi', img: 'placeholder.jpg' },
+                    { name: 'ESTRI SULISTYO RINI', role: 'Ketua Divisi', img: 'placeholder.jpg' },
+                    { name: 'NAUFAL', role: 'Sekretaris Divisi', img: 'placeholder.jpg' },
                     // STAFF MEMBERS (5)
-                    { name: 'Staff Penalaran 1', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Penalaran 2', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Penalaran 3', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Penalaran 4', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Penalaran 5', role: 'Staff Divisi', img: 'placeholder.jpg' }
+                    { name: 'SITI MUDDAWAMAH', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'GUSTI SINAR PAMENANG', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'FEBY YURIKAWATI', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'FINNA KURNIA S.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'BAYU', role: 'Staff Divisi', img: 'placeholder.jpg' }
                 ]
             },
             'bakmin': {
