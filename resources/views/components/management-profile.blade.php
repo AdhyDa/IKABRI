@@ -55,7 +55,7 @@
                         <div class="bg-white dark:bg-[#1E293B] rounded-[20px] overflow-hidden border-[5px] border-[#7C3AED] shadow-lg">
                             <img src="{{ asset('image/placeholder.jpg') }}" class="w-full h-64 object-cover" alt="Member">
                             <div class="p-4 text-center">
-                                <h4 class="font-bold text-[#0F172A] dark:text-[#F8FAFC] text-lg uppercase">DEKA SABILA</h4>
+                                <h4 class="font-bold text-[#0F172A] dark:text-[#F8FAFC] text-lg uppercase">DEKA SABILA ALIFIA S.</h4>
                                 <p class="text-sm text-[#0F172A] dark:text-[#F8FAFC] opacity-80">Bendahara Umum</p>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                         <div class="bg-white dark:bg-[#1E293B] rounded-[24px] overflow-hidden border-[5px] border-[#7C3AED] shadow-2xl transform scale-105">
                             <img src="{{ asset('image/placeholder.jpg') }}" class="w-full h-80 object-cover" alt="Member">
                             <div class="p-6 text-center">
-                                <h4 class="font-bold text-[#0F172A] dark:text-[#F8FAFC] text-xl uppercase">PUTRA GANA W.</h4>
+                                <h4 class="font-bold text-[#0F172A] dark:text-[#F8FAFC] text-xl uppercase">PUTRA GANA WACANA</h4>
                                 <p class="text-base text-[#0F172A] dark:text-[#F8FAFC] opacity-80">Ketua Umum</p>
                             </div>
                         </div>
@@ -77,7 +77,7 @@
                         <div class="bg-white dark:bg-[#1E293B] rounded-[20px] overflow-hidden border-[5px] border-[#7C3AED] shadow-lg">
                             <img src="{{ asset('image/placeholder.jpg') }}" class="w-full h-64 object-cover" alt="Member">
                             <div class="p-4 text-center">
-                                <h4 class="font-bold text-[#0F172A] dark:text-[#F8FAFC] text-lg uppercase">CLARISTHA S.</h4>
+                                <h4 class="font-bold text-[#0F172A] dark:text-[#F8FAFC] text-lg uppercase">CLARISTHA FIRNANDA</h4>
                                 <p class="text-sm text-[#0F172A] dark:text-[#F8FAFC] opacity-80">Sekretaris Umum</p>
                             </div>
                         </div>
@@ -97,9 +97,9 @@
                 title: "BADAN PENGURUS HARIAN",
                 layout: 'bph',
                 members: [
-                    { name: 'DEKA SABILA', role: 'Bendahara Umum', img: 'placeholder.jpg' },
-                    { name: 'PUTRA GANA W.', role: 'Ketua Umum', img: 'placeholder.jpg' },
-                    { name: 'CLARISTHA S.', role: 'Sekretaris Umum', img: 'placeholder.jpg' }
+                    { name: 'DEKA SABILA ALIFIA S.', role: 'Bendahara Umum', img: 'placeholder.jpg' },
+                    { name: 'PUTRA GANA WACANA', role: 'Ketua Umum', img: 'placeholder.jpg' },
+                    { name: 'CLARISTHA FIRNANDA', role: 'Sekretaris Umum', img: 'placeholder.jpg' }
                 ]
             },
             'huminfo': {
@@ -107,17 +107,17 @@
                 layout: 'standard',
                 members: [
                     // TOP 2 LEADERS
-                    { name: 'KETUA HUMINFO', role: 'Ketua Divisi', img: 'placeholder.jpg' },
-                    { name: 'SEKRETARIS HUMINFO', role: 'Sekretaris Divisi', img: 'placeholder.jpg' },
+                    { name: 'MARWA ULIA HASANA', role: 'Ketua Divisi', img: 'placeholder.jpg' },
+                    { name: 'SINA ALFIAN RUHIL `ILMI', role: 'Sekretaris Divisi', img: 'placeholder.jpg' },
                     // STAFF MEMBERS (8)
-                    { name: 'Staff Huminfo 1', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Huminfo 2', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Huminfo 3', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Huminfo 4', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Huminfo 5', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Huminfo 6', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Huminfo 7', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Huminfo 8', role: 'Staff Divisi', img: 'placeholder.jpg' }
+                    { name: 'ADHYAKSA DAUDI M.A.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'DHEFITA MATHOVANI', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'AZ-ZAHRA FIRSTA N.P.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'NAFIDATUS SA`ADAH', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'MAHAGO SETIAWAN', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'SACRALIA AURORA A.R.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'NOUVAL PRASETYA H.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'ANIKHA PUTRI Y.', role: 'Staff Divisi', img: 'placeholder.jpg' }
                 ]
             },
             'penalaran': {
