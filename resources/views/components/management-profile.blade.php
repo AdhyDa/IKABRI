@@ -10,7 +10,6 @@
 
             <!-- TABS -->
             <div class="flex flex-col items-center gap-6 mb-8">
-
                 <!-- BPH Tab (Isolated Top) -->
                 <div>
                     <button onclick="switchTab('bph')" id="tab-bph" class="tab-btn px-10 py-2 rounded-full bg-white dark:bg-[#1E293B] border-[3px] text-sm md:text-base font-bold transition-all duration-300
@@ -82,12 +81,9 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </div>
-
     </div>
 
     <script>
@@ -110,12 +106,12 @@
                     { name: 'MARWA ULIA HASANA', role: 'Ketua Divisi', img: 'placeholder.jpg' },
                     { name: 'SINA ALFIAN RUHIL `ILMI', role: 'Sekretaris Divisi', img: 'placeholder.jpg' },
                     // STAFF MEMBERS (8)
-                    { name: 'ADHYAKSA DAUDI M.A.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'ADHYAKSA DAUDI M. A.', role: 'Staff Divisi', img: 'placeholder.jpg' },
                     { name: 'DHEFITA MATHOVANI', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'AZ-ZAHRA FIRSTA N.P.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'AZ-ZAHRA FIRSTA N. P.', role: 'Staff Divisi', img: 'placeholder.jpg' },
                     { name: 'NAFIDATUS SA`ADAH', role: 'Staff Divisi', img: 'placeholder.jpg' },
                     { name: 'MAHAGO SETIAWAN', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'SACRALIA AURORA A.R.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'SACRALIA AURORA A. R.', role: 'Staff Divisi', img: 'placeholder.jpg' },
                     { name: 'NOUVAL PRASETYA H.', role: 'Staff Divisi', img: 'placeholder.jpg' },
                     { name: 'ANIKHA PUTRI Y.', role: 'Staff Divisi', img: 'placeholder.jpg' }
                 ]
@@ -140,21 +136,21 @@
                 layout: 'standard',
                 members: [
                     // TOP 2 LEADERS
-                    { name: 'KETUA BAKMIN', role: 'Ketua Divisi', img: 'placeholder.jpg' },
-                    { name: 'SEKRETARIS BAKMIN', role: 'Sekretaris Divisi', img: 'placeholder.jpg' },
+                    { name: 'SURYA DHAMAR S.', role: 'Ketua Divisi', img: 'placeholder.jpg' },
+                    { name: 'AYU LESTARI FEBMI', role: 'Sekretaris Divisi', img: 'placeholder.jpg' },
                     // STAFF MEMBERS (12)
-                    { name: 'Staff Bakmin 1', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Bakmin 2', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Bakmin 3', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Bakmin 4', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Bakmin 5', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Bakmin 6', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Bakmin 7', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Bakmin 8', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Bakmin 9', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Bakmin 10', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Bakmin 11', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Bakmin 12', role: 'Staff Divisi', img: 'placeholder.jpg' }
+                    { name: 'AVINA KHOIRUNNISA', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'NADIATUL AKMA F.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'GADING NICKO S.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'AMMAR IQBAL F.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'M. IQBAL RISKI M.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'ADIBSYAH J. A.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'M. DIAN RIZAL A.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'FRIDA NUR ASVIANA', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'RAHMADANI RITONGA', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'YESSICA RAHMAWATI', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'ERINE FISDIAN M.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'FIFI NUR FADILAH', role: 'Staff Divisi', img: 'placeholder.jpg' }
                 ]
             },
             'pengmas': {
@@ -162,17 +158,17 @@
                 layout: 'standard',
                 members: [
                     // TOP 2 LEADERS
-                    { name: 'KETUA PENGMAS', role: 'Ketua Divisi', img: 'placeholder.jpg' },
-                    { name: 'SEKRETARIS PENGMAS', role: 'Sekretaris Divisi', img: 'placeholder.jpg' },
+                    { name: 'M. ALVIN RIDHO U.', role: 'Ketua Divisi', img: 'placeholder.jpg' },
+                    { name: 'SAYYID NUR ROHMAN', role: 'Sekretaris Divisi', img: 'placeholder.jpg' },
                     // STAFF MEMBERS (8)
-                    { name: 'Staff Pengmas 1', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Pengmas 2', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Pengmas 3', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Pengmas 4', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Pengmas 5', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Pengmas 6', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Pengmas 7', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Pengmas 8', role: 'Staff Divisi', img: 'placeholder.jpg' }
+                    { name: 'YAHYA IMELYA PUTRI', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'SALSA NABILA', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'DANIEL LUTVI P.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'NAUFAL NUR FAHMI', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'ENJELITA SETIA A.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'ADELIA BRILLIAN N.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'M. IRGI FAHREZI', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'SITI NURANISA', role: 'Staff Divisi', img: 'placeholder.jpg' }
                 ]
             },
             'organisasi': {
@@ -180,20 +176,20 @@
                 layout: 'standard',
                 members: [
                     // TOP 2 LEADERS
-                    { name: 'KETUA ORGANISASI', role: 'Ketua Divisi', img: 'placeholder.jpg' },
-                    { name: 'SEKRETARIS ORGANISASI', role: 'Sekretaris Divisi', img: 'placeholder.jpg' },
+                    { name: 'SITI NABILA A.', role: 'Ketua Divisi', img: 'placeholder.jpg' },
+                    { name: 'M. ZAMZAM S.', role: 'Sekretaris Divisi', img: 'placeholder.jpg' },
                     // STAFF MEMBERS (11)
-                    { name: 'Staff Organisasi 1', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Organisasi 2', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Organisasi 3', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Organisasi 4', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Organisasi 5', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Organisasi 6', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Organisasi 7', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Organisasi 8', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Organisasi 9', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Organisasi 10', role: 'Staff Divisi', img: 'placeholder.jpg' },
-                    { name: 'Staff Organisasi 11', role: 'Staff Divisi', img: 'placeholder.jpg' }
+                    { name: 'AIDA FARAH R.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'KHILDA JAUHAIRINA', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'HAFIZZAMAN', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'M. RISMA ZADHA', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'DEVI MIFTAKHUL J.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'RIDA IRMAYANTI S.', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'FADILA GIASVANI', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'AULINA RAMADHANI', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'BIMA', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'KAMILA', role: 'Staff Divisi', img: 'placeholder.jpg' },
+                    { name: 'INEZA', role: 'Staff Divisi', img: 'placeholder.jpg' }
                 ]
             }
         };
@@ -256,7 +252,6 @@
                     // Standard Layout: 2 Leaders + Grid
                     // Using EXPLICIT data from the array
                     const m = data.members;
-
                     // Leaders (Index 0 and 1)
                     let leadersHTML = `
                         <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-12 mb-12">
