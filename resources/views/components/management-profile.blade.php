@@ -48,36 +48,49 @@
 
             <!-- CARDS GRID -->
             <div id="cards-container" class="w-full">
-                <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
-                    <!-- Left (Side) -->
-                    <div class="order-2 md:order-1 w-64 md:mt-12">
-                        <div class="bg-white dark:bg-[#1E293B] rounded-[20px] overflow-hidden border-[5px] border-[#7C3AED] shadow-lg">
-                            <img src="{{ asset('image/placeholder.jpg') }}" class="w-full h-64 object-cover" alt="Member">
-                            <div class="p-4 text-center">
-                                <h4 class="font-bold text-[#0F172A] dark:text-[#F8FAFC] text-lg uppercase">DEKA SABILA ALIFIA S.</h4>
-                                <p class="text-sm text-[#0F172A] dark:text-[#F8FAFC] opacity-80">Bendahara Umum</p>
+                <!-- Static BPH Layout matching dynamic Logic -->
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                    <!-- Left (Side) - Standard -->
+                    <div class="order-2 md:order-1 pt-12 md:pt-12">
+                        <div class="profile-card opacity-1 flex-shrink-0 flex flex-col mx-auto relative group perspective-container" style="width: 280px; height: 373px;">
+                            <div class="tilt-frame w-full h-full bg-white dark:bg-[#1E293B] rounded-[20px] overflow-hidden border-[5px] border-[#7C3AED] shadow-lg flex flex-col transition-transform duration-100 ease-out" style="transform-style: preserve-3d;">
+                                <div class="flex-grow relative overflow-hidden">
+                                    <img src="{{ asset('image/placeholder.jpg') }}" class="w-full h-full object-cover" alt="DEKA SABILA">
+                                </div>
+                                <div class="p-8 text-center bg-white dark:bg-[#1E293B] shrink-0 z-10 relative">
+                                    <h4 class="font-bold text-[#0F172A] dark:text-[#F8FAFC] text-lg uppercase leading-tight mb-2">DEKA SABILA ALIFIA S.</h4>
+                                    <p class="text-sm text-[#0F172A] dark:text-[#F8FAFC] opacity-80 font-medium">Bendahara Umum</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Center (Main) -->
-                    <div class="order-1 md:order-2 w-72 md:w-80 z-10">
-                        <div class="bg-white dark:bg-[#1E293B] rounded-[24px] overflow-hidden border-[5px] border-[#7C3AED] shadow-2xl transform scale-105">
-                            <img src="{{ asset('image/placeholder.jpg') }}" class="w-full h-80 object-cover" alt="Member">
-                            <div class="p-6 text-center">
-                                <h4 class="font-bold text-[#0F172A] dark:text-[#F8FAFC] text-xl uppercase">PUTRA GANA WACANA</h4>
-                                <p class="text-base text-[#0F172A] dark:text-[#F8FAFC] opacity-80">Ketua Umum</p>
+                    <!-- Center (Main) - Large -->
+                    <div class="order-1 md:order-2 z-10">
+                        <div class="profile-card opacity-1 flex-shrink-0 flex flex-col mx-auto relative group perspective-container" style="width: 308px; height: 410px;">
+                            <div class="tilt-frame w-full h-full bg-white dark:bg-[#1E293B] rounded-[24px] overflow-hidden border-[5px] border-[#7C3AED] shadow-lg flex flex-col transition-transform duration-100 ease-out" style="transform-style: preserve-3d;">
+                                <div class="flex-grow relative overflow-hidden">
+                                    <img src="{{ asset('image/placeholder.jpg') }}" class="w-full h-full object-cover" alt="PUTRA GANA W.">
+                                </div>
+                                <div class="p-8 text-center bg-white dark:bg-[#1E293B] shrink-0 z-10 relative">
+                                    <h4 class="font-bold text-[#0F172A] dark:text-[#F8FAFC] text-xl uppercase leading-tight mb-2">PUTRA GANA WACANA</h4>
+                                    <p class="text-base text-[#0F172A] dark:text-[#F8FAFC] opacity-80 font-medium">Ketua Umum</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Right (Side) -->
-                    <div class="order-3 md:order-3 w-64 md:mt-12">
-                        <div class="bg-white dark:bg-[#1E293B] rounded-[20px] overflow-hidden border-[5px] border-[#7C3AED] shadow-lg">
-                            <img src="{{ asset('image/placeholder.jpg') }}" class="w-full h-64 object-cover" alt="Member">
-                            <div class="p-4 text-center">
-                                <h4 class="font-bold text-[#0F172A] dark:text-[#F8FAFC] text-lg uppercase">CLARISTHA FIRNANDA</h4>
-                                <p class="text-sm text-[#0F172A] dark:text-[#F8FAFC] opacity-80">Sekretaris Umum</p>
+                    <!-- Right (Side) - Standard -->
+                    <div class="order-3 md:order-3 pt-12 md:pt-12">
+                        <div class="profile-card opacity-1 flex-shrink-0 flex flex-col mx-auto relative group perspective-container" style="width: 280px; height: 373px;">
+                            <div class="tilt-frame w-full h-full bg-white dark:bg-[#1E293B] rounded-[20px] overflow-hidden border-[5px] border-[#7C3AED] shadow-lg flex flex-col transition-transform duration-100 ease-out" style="transform-style: preserve-3d;">
+                                <div class="flex-grow relative overflow-hidden">
+                                    <img src="{{ asset('image/placeholder.jpg') }}" class="w-full h-full object-cover" alt="CLARISTHA S.">
+                                </div>
+                                <div class="p-8 text-center bg-white dark:bg-[#1E293B] shrink-0 z-10 relative">
+                                    <h4 class="font-bold text-[#0F172A] dark:text-[#F8FAFC] text-lg uppercase leading-tight mb-2">CLARISTHA FIRNANDA</h4>
+                                    <p class="text-sm text-[#0F172A] dark:text-[#F8FAFC] opacity-80 font-medium">Sekretaris Umum</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -86,8 +99,18 @@
         </div>
     </div>
 
+    <!-- STYLE for 3D Perspective -->
+    <style>
+        .perspective-container {
+            perspective: 1000px;
+        }
+    </style>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+
     <script>
-        // Data Structure with EXPLICIT member arrays for editing
+        // Data Structure with EXPLICIT member arrays
         const divisionData = {
             'bph': {
                 title: "BADAN PENGURUS HARIAN",
@@ -102,10 +125,8 @@
                 title: "Divisi Huminfo",
                 layout: 'standard',
                 members: [
-                    // TOP 2 LEADERS
                     { name: 'MARWA ULIA HASANA', role: 'Ketua Divisi', img: 'placeholder.jpg' },
                     { name: 'SINA ALFIAN RUHIL `ILMI', role: 'Sekretaris Divisi', img: 'placeholder.jpg' },
-                    // STAFF MEMBERS (8)
                     { name: 'ADHYAKSA DAUDI M. A.', role: 'Staff Divisi', img: 'placeholder.jpg' },
                     { name: 'DHEFITA MATHOVANI', role: 'Staff Divisi', img: 'placeholder.jpg' },
                     { name: 'AZ-ZAHRA FIRSTA N. P.', role: 'Staff Divisi', img: 'placeholder.jpg' },
@@ -120,10 +141,8 @@
                 title: "Divisi Penalaran",
                 layout: 'standard',
                 members: [
-                    // TOP 2 LEADERS
                     { name: 'ESTRI SULISTYO RINI', role: 'Ketua Divisi', img: 'placeholder.jpg' },
                     { name: 'NAUFAL', role: 'Sekretaris Divisi', img: 'placeholder.jpg' },
-                    // STAFF MEMBERS (5)
                     { name: 'SITI MUDDAWAMAH', role: 'Staff Divisi', img: 'placeholder.jpg' },
                     { name: 'GUSTI SINAR PAMENANG', role: 'Staff Divisi', img: 'placeholder.jpg' },
                     { name: 'FEBY YURIKAWATI', role: 'Staff Divisi', img: 'placeholder.jpg' },
@@ -135,10 +154,8 @@
                 title: "Divisi Bakmin",
                 layout: 'standard',
                 members: [
-                    // TOP 2 LEADERS
                     { name: 'SURYA DHAMAR S.', role: 'Ketua Divisi', img: 'placeholder.jpg' },
                     { name: 'AYU LESTARI FEBMI', role: 'Sekretaris Divisi', img: 'placeholder.jpg' },
-                    // STAFF MEMBERS (12)
                     { name: 'AVINA KHOIRUNNISA', role: 'Staff Divisi', img: 'placeholder.jpg' },
                     { name: 'NADIATUL AKMA F.', role: 'Staff Divisi', img: 'placeholder.jpg' },
                     { name: 'GADING NICKO S.', role: 'Staff Divisi', img: 'placeholder.jpg' },
@@ -157,10 +174,8 @@
                 title: "Divisi Pengmas",
                 layout: 'standard',
                 members: [
-                    // TOP 2 LEADERS
                     { name: 'M. ALVIN RIDHO U.', role: 'Ketua Divisi', img: 'placeholder.jpg' },
                     { name: 'SAYYID NUR ROHMAN', role: 'Sekretaris Divisi', img: 'placeholder.jpg' },
-                    // STAFF MEMBERS (8)
                     { name: 'YAHYA IMELYA PUTRI', role: 'Staff Divisi', img: 'placeholder.jpg' },
                     { name: 'SALSA NABILA', role: 'Staff Divisi', img: 'placeholder.jpg' },
                     { name: 'DANIEL LUTVI P.', role: 'Staff Divisi', img: 'placeholder.jpg' },
@@ -175,10 +190,8 @@
                 title: "Divisi Organisasi",
                 layout: 'standard',
                 members: [
-                    // TOP 2 LEADERS
                     { name: 'SITI NABILA A.', role: 'Ketua Divisi', img: 'placeholder.jpg' },
                     { name: 'M. ZAMZAM S.', role: 'Sekretaris Divisi', img: 'placeholder.jpg' },
-                    // STAFF MEMBERS (11)
                     { name: 'AIDA FARAH R.', role: 'Staff Divisi', img: 'placeholder.jpg' },
                     { name: 'KHILDA JAUHAIRINA', role: 'Staff Divisi', img: 'placeholder.jpg' },
                     { name: 'HAFIZZAMAN', role: 'Staff Divisi', img: 'placeholder.jpg' },
@@ -196,19 +209,22 @@
 
         // Helper to generate member card HTML
         function createCard(name, role, isLarge = false) {
-            const h = isLarge ? 'h-80' : 'h-64';
-            const w = isLarge ? 'w-full' : 'w-full';
+            const widthStyle = isLarge ? 'width: 308px;' : 'width: 280px;';
+            const heightStyle = isLarge ? 'height: 410px;' : 'height: 373px;';
             const rounded = isLarge ? 'rounded-[24px]' : 'rounded-[20px]';
-            const scale = isLarge ? 'transform scale-105 shadow-2xl' : 'shadow-lg';
             const border = 'border-[5px] border-[#7C3AED]';
             const bg = 'bg-white dark:bg-[#1E293B]';
-
+            
             return `
-                <div class="${bg} ${rounded} overflow-hidden ${border} ${scale} h-full flex flex-col">
-                    <img src="{{ asset('image/placeholder.jpg') }}" class="w-full ${h} object-cover" alt="${name}">
-                    <div class="${isLarge ? 'p-6' : 'p-4'} text-center mt-auto">
-                        <h4 class="font-bold text-[#0F172A] dark:text-[#F8FAFC] ${isLarge ? 'text-xl' : 'text-lg'} uppercase">${name}</h4>
-                        <p class="${isLarge ? 'text-base' : 'text-sm'} text-[#0F172A] dark:text-[#F8FAFC] opacity-80">${role}</p>
+                <div class="profile-card opacity-0 flex-shrink-0 flex flex-col mx-auto relative group perspective-container" style="${widthStyle} ${heightStyle}">
+                    <div class="tilt-frame w-full h-full ${bg} ${rounded} overflow-hidden ${border} shadow-lg flex flex-col transition-transform duration-100 ease-out" style="transform-style: preserve-3d;">
+                        <div class="flex-grow relative overflow-hidden">
+                            <img src="{{ asset('image/placeholder.jpg') }}" class="w-full h-full object-cover" alt="${name}">
+                        </div>
+                        <div class="p-8 text-center bg-white dark:bg-[#1E293B] shrink-0 z-10 relative">
+                            <h4 class="font-bold text-[#0F172A] dark:text-[#F8FAFC] ${isLarge ? 'text-xl' : 'text-lg'} uppercase leading-tight mb-2">${name}</h4>
+                            <p class="${isLarge ? 'text-base' : 'text-sm'} text-[#0F172A] dark:text-[#F8FAFC] opacity-80 font-medium">${role}</p>
+                        </div>
                     </div>
                 </div>
             `;
@@ -216,64 +232,108 @@
 
         function switchTab(key) {
             const container = document.getElementById('division-content-container');
+            const titleEl = document.getElementById('division-title');
             const data = divisionData[key];
 
-            // 1. Update Tabs Active State
+            // 1. Update Tabs
             document.querySelectorAll('.tab-btn').forEach(btn => {
-                // Reset to inactive state
                 btn.classList.remove('border-[#F59E0B]', 'text-[#F59E0B]', 'font-bold');
                 btn.classList.add('border-[#7C3AED]', 'dark:border-[#5A28AF]', 'font-medium', 'text-[#0F172A]', 'dark:text-[#F8FAFC]');
             });
 
             const activeBtn = document.getElementById('tab-' + key);
-            // Apply active state
             activeBtn.classList.remove('border-[#7C3AED]', 'dark:border-[#5A28AF]', 'font-medium', 'text-[#0F172A]', 'dark:text-[#F8FAFC]');
             activeBtn.classList.add('border-[#F59E0B]', 'text-[#F59E0B]', 'font-bold');
 
-            // 2. Animate Out
-            container.classList.add('opacity-0', 'translate-y-4');
+            // 2. GSAP Animation
+            const tl = gsap.timeline();
+            const currentCards = document.querySelectorAll('.profile-card');
+            
+            tl.to([titleEl, ...currentCards], {
+                duration: 0.3, x: -50, autoAlpha: 0, stagger: 0.05, ease: "power2.in"
+            });
 
-            setTimeout(() => {
-                // 3. Update Content
-                document.getElementById('division-title').textContent = data.title;
+            tl.call(() => {
+                titleEl.textContent = data.title;
+                gsap.set(titleEl, { x: 50, autoAlpha: 0 });
+
                 const cardsContainer = document.getElementById('cards-container');
-
+                
                 if (data.layout === 'bph') {
-                    // Specific BPH Layout
                     const m = data.members;
                     cardsContainer.innerHTML = `
-                        <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
-                            <div class="order-2 md:order-1 w-64 md:mt-12">${createCard(m[0].name, m[0].role)}</div>
-                            <div class="order-1 md:order-2 w-72 md:w-80 z-10">${createCard(m[1].name, m[1].role, true)}</div>
-                            <div class="order-2 md:order-3 w-64 md:mt-12">${createCard(m[2].name, m[2].role)}</div>
+                        <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                            <div class="order-2 md:order-1 pt-12 md:pt-12">${createCard(m[0].name, m[0].role)}</div>
+                            <div class="order-1 md:order-2 z-10">${createCard(m[1].name, m[1].role, true)}</div>
+                            <div class="order-2 md:order-3 pt-12 md:pt-12">${createCard(m[2].name, m[2].role)}</div>
                         </div>
                     `;
                 } else {
-                    // Standard Layout: 2 Leaders + Grid
-                    // Using EXPLICIT data from the array
                     const m = data.members;
-                    // Leaders (Index 0 and 1)
                     let leadersHTML = `
-                        <div class="flex flex-col md:flex-row justify-center gap-8 md:gap-12 mb-12">
-                            <div class="w-64 max-w-full mx-auto md:mx-0">${createCard(m[0].name, m[0].role)}</div>
-                            <div class="w-64 max-w-full mx-auto md:mx-0">${createCard(m[1].name, m[1].role)}</div>
+                        <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-12">
+                            <div>${createCard(m[0].name, m[0].role)}</div>
+                            <div>${createCard(m[1].name, m[1].role)}</div>
                         </div>
                     `;
-
-                    // Grid (Index 2 onwards)
-                    let gridHTML = `<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">`;
-
+                    let gridHTML = `<div class="flex flex-wrap justify-center gap-6 max-w-7xl mx-auto">`;
                     for(let i=2; i < m.length; i++) {
-                        gridHTML += `<div class="w-full">${createCard(m[i].name, m[i].role)}</div>`;
+                        gridHTML += `<div>${createCard(m[i].name, m[i].role)}</div>`;
                     }
                     gridHTML += `</div>`;
-
                     cardsContainer.innerHTML = leadersHTML + gridHTML;
                 }
+            });
 
-                // 4. Animate In
-                container.classList.remove('opacity-0', 'translate-y-4');
-            }, 500); // Wait for transition
+            tl.call(() => {
+                const newCards = document.querySelectorAll('.profile-card');
+                gsap.set(newCards, { x: 50, autoAlpha: 0 });
+                gsap.to(titleEl, { duration: 0.5, x: 0, autoAlpha: 1, ease: "power2.out" });
+                gsap.to(newCards, {
+                    duration: 0.5, x: 0, autoAlpha: 1, stagger: 0.1, ease: "back.out(1.2)", delay: 0.1
+                });
+                
+                refreshTiltEffect();
+            });
         }
+
+        // TILT EFFECT LOGIC (Vanilla JS)
+        function refreshTiltEffect() {          
+            const cards = document.querySelectorAll('.perspective-container');
+            
+            cards.forEach(card => {
+                const frame = card.querySelector('.tilt-frame');
+                
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    
+                    const rotateX = ((y - centerY) / centerY) * -10; // Inverted for natural feel
+                    const rotateY = ((x - centerX) / centerX) * 10;
+                    
+                    frame.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    frame.style.transform = `rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+                });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const titleEl = document.getElementById('division-title');
+            const cards = document.querySelectorAll('.profile-card');
+            gsap.set([titleEl, ...cards], { x: 50, autoAlpha: 0 });
+            
+            const tl = gsap.timeline({ delay: 0.5 });
+            tl.to(titleEl, { duration: 0.5, x: 0, autoAlpha: 1, ease: "power2.out" })
+                .to(cards, { duration: 0.5, x: 0, autoAlpha: 1, stagger: 0.1, ease: "back.out(1.2)" }, "-=0.3");
+            
+            refreshTiltEffect();
+        });
     </script>
 </section>
