@@ -135,7 +135,7 @@
                         <!-- Content Timeline -->
                         <div id="content-timeline" class="tab-content hidden">
                             <h4 class="text-xl font-bold font-heading mb-4">Pelaksanaan Kegiatan</h4>
-                            <div class="mb-8 bg-white/50 dark:bg-black/20 p-6 rounded-xl border-l-4 border-[#7C3AED] dark:border-[#F59E0B]">
+                            <div class="mb-8 bg-[#D6CEFF] dark:bg-black/20 p-6 rounded-xl border-l-4 border-[#7C3AED] dark:border-[#F59E0B]">
                                 <div class="grid grid-cols-1 md:grid-cols-[150px_1fr] gap-y-3 text-base md:text-lg opacity-90">
                                     <div class="font-bold">Hari/Tanggal</div>
                                     <div>: Sabtu - Minggu / 10 - 11 Januari 2026</div>
@@ -152,7 +152,7 @@
                             </div>
 
                             <h4 class="text-xl font-bold font-heading mb-4">Technical Meeting</h4>
-                            <div class="mb-4 bg-white/50 dark:bg-black/20 p-6 rounded-xl border-l-4 border-[#7C3AED] dark:border-[#F59E0B]">
+                            <div class="mb-4 bg-[#D6CEFF] dark:bg-black/20 p-6 rounded-xl border-l-4 border-[#7C3AED] dark:border-[#F59E0B]">
                                 <div class="grid grid-cols-1 md:grid-cols-[150px_1fr] gap-y-3 text-base md:text-lg opacity-90">
                                     <div class="font-bold">Hari/Tanggal</div>
                                     <div>: Minggu, 4 Januari 2026</div>
@@ -263,7 +263,7 @@
 
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                                 <!-- Juara List -->
-                                <div class="bg-white/50 dark:bg-black/20 p-6 rounded-xl border-l-4 border-[#7C3AED] dark:border-[#F59E0B]">
+                                <div class="bg-[#D6CEFF] dark:bg-black/20 p-6 rounded-xl border-l-4 border-[#7C3AED] dark:border-[#F59E0B]">
                                     <h5 class="font-bold text-lg mb-4 text-[#7C3AED] dark:text-[#F59E0B]">Juara Utama</h5>
                                     <ul class="space-y-4 opacity-90">
                                         <li>
@@ -282,7 +282,7 @@
                                 </div>
 
                                 <!-- Individual & Supporter List -->
-                                <div class="bg-white/50 dark:bg-black/20 p-6 rounded-xl border-l-4 border-[#7C3AED] dark:border-[#F59E0B]">
+                                <div class="bg-[#D6CEFF] dark:bg-black/20 p-6 rounded-xl border-l-4 border-[#7C3AED] dark:border-[#F59E0B]">
                                     <h5 class="font-bold text-lg mb-4 text-[#7C3AED] dark:text-[#F59E0B]">Penghargaan Khusus</h5>
                                     <ul class="space-y-4 opacity-90">
                                         <li>
@@ -314,6 +314,8 @@
         </div>
     </div>
 
+    <!-- Add GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script>
         let currentTabId = 'pendahuluan';
         let isAnimating = false;
@@ -330,43 +332,62 @@
             });
 
             const activeBtn = document.getElementById('btn-' + newTabId);
-            activeBtn.classList.remove('border-[2px]', 'border-[#BABABA]', 'dark:border-white/30');
-            activeBtn.classList.add('border-[3px]', 'border-[#7C3AED]', 'dark:border-[#431E82]');
+            if (activeBtn) {
+                activeBtn.classList.remove('border-[2px]', 'border-[#BABABA]', 'dark:border-white/30');
+                activeBtn.classList.add('border-[3px]', 'border-[#7C3AED]', 'dark:border-[#431E82]');
+            }
 
-
-            // 2. Animate Content Slide
+            // 2. Animate Content Slide with GSAP Safety Check
             const contentWrapper = document.getElementById('content-inner');
             const oldContent = document.getElementById('content-' + currentTabId);
             const newContent = document.getElementById('content-' + newTabId);
 
-            const tl = gsap.timeline({
-                onComplete: () => {
-                    currentTabId = newTabId;
-                    isAnimating = false;
-                }
-            });
+            if (typeof gsap !== 'undefined') {
+                const tl = gsap.timeline();
 
-            tl.to(contentWrapper, {
-                duration: 0.4,
-                x: -50,
-                opacity: 0,
-                ease: "power2.in",
-                onComplete: () => {
+                tl.to(contentWrapper, {
+                    duration: 0.4,
+                    x: -50,
+                    opacity: 0,
+                    ease: "power2.in",
+                    onComplete: () => {
+                        if (oldContent) {
+                            oldContent.classList.add('hidden');
+                            oldContent.classList.remove('block');
+                        }
+
+                        if (newContent) {
+                            newContent.classList.remove('hidden');
+                            newContent.classList.add('block');
+                        }
+
+                        gsap.set(contentWrapper, { x: 50 });
+                    }
+                })
+                .to(contentWrapper, {
+                    duration: 0.4,
+                    x: 0,
+                    opacity: 1,
+                    ease: "power2.out",
+                    onComplete: () => {
+                        currentTabId = newTabId;
+                        isAnimating = false;
+                    }
+                });
+            } else {
+                // Fallback if GSAP is missing
+                if (oldContent) {
                     oldContent.classList.add('hidden');
                     oldContent.classList.remove('block');
+                }
 
+                if (newContent) {
                     newContent.classList.remove('hidden');
                     newContent.classList.add('block');
-
-                    gsap.set(contentWrapper, { x: 50 });
                 }
-            })
-            .to(contentWrapper, {
-                duration: 0.4,
-                x: 0,
-                opacity: 1,
-                ease: "power2.out"
-            });
+                currentTabId = newTabId;
+                isAnimating = false;
+            }
         }
     </script>
 </section>

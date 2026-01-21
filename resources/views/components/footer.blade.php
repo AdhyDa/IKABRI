@@ -54,9 +54,9 @@
             <div>
                 <h3 class="text-2xl font-bold font-heading mb-6">Menu</h3>
                 <ul class="space-y-4 font-body opacity-90">
-                    <li><a href="/" class="hover:underline hover:opacity-100 transition-opacity">Beranda</a></li>
-                    <li><a href="#" class="hover:underline hover:opacity-100 transition-opacity">Profil</a></li>
-                    <li><a href="#" class="hover:underline hover:opacity-100 transition-opacity">Program Kerja</a></li>
+                    <li><a href="{{ route('home') }}" class="hover:underline hover:opacity-100 transition-opacity">Beranda</a></li>
+                    <li><a href="{{ route('profil') }}" class="hover:underline hover:opacity-100 transition-opacity">Profil</a></li>
+                    <li><a href="{{ route('proker') }}" class="hover:underline hover:opacity-100 transition-opacity">Program Kerja</a></li>
                     <li><a href="#" class="hover:underline hover:opacity-100 transition-opacity">Galeri</a></li>
                 </ul>
             </div>
