@@ -39,10 +39,17 @@
                         <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
                     </button>
 
-                    <!-- Search -->
-                    <button class="p-2 rounded-full text-primary-text dark:text-primary-text-dark hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                    </button>
+                    <!-- Search Container -->
+                    <div class="flex items-center">
+                        <!-- Search Input -->
+                        <input type="text" id="navbar-search-input" placeholder="Cari di sini" 
+                            class="hidden w-0 text-sm text-gray-700 dark:text-gray-200 bg-transparent border-b-2 border-gray-300 dark:border-gray-600 focus:outline-none focus:border-secondary transition-all duration-300 mr-2">
+                        
+                        <!-- Search Button -->
+                        <button id="navbar-search-btn" class="p-2 rounded-full text-primary-text dark:text-primary-text-dark hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -83,3 +90,115 @@
         </div>
     </div>
 </nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // --- SEARCH LOGIC ---
+        const searchBtn = document.getElementById('navbar-search-btn');
+        const searchInput = document.getElementById('navbar-search-input');
+        const navLinks = document.querySelector('.lg\\:flex.space-x-8');
+        let originalContent = []; 
+
+        if (searchBtn && searchInput) {
+            searchBtn.addEventListener('click', function() {
+                // Toggle Search Input
+                if (searchInput.classList.contains('hidden')) {
+                    searchInput.classList.remove('hidden', 'w-0');
+                    searchInput.classList.add('w-48'); // Expand width
+                    searchInput.focus();
+                    
+                    // Shift Nav Links Left
+                    if (navLinks) {
+                        navLinks.style.transform = 'translateX(-2rem)'; 
+                        navLinks.style.transition = 'transform 0.3s ease';
+                    }
+
+                } else {
+                    searchInput.classList.add('hidden', 'w-0');
+                    searchInput.classList.remove('w-48');
+                    
+                    // Reset Nav Links
+                    if (navLinks) {
+                        navLinks.style.transform = 'translateX(0)';
+                    }
+                    
+                    // Clear search
+                    removeHighlights();
+                    searchInput.value = '';
+                }
+            });
+
+            // Search Logic
+            searchInput.addEventListener('input', function(e) {
+                const term = e.target.value.trim();
+                removeHighlights();
+                if (term.length > 0) {
+                    highlightText(term);
+                }
+            });
+        }
+        
+        function highlightText(term) {
+             const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+                acceptNode: function(node) {
+                    // Skip script, style, and navbar itself
+                    if (node.parentElement.tagName === 'SCRIPT' || 
+                        node.parentElement.tagName === 'STYLE' || 
+                        node.parentElement.tagName === 'NOSCRIPT' ||
+                        node.parentElement.closest('nav') || 
+                        node.parentElement.tagName === 'TEXTAREA' ||
+                        node.parentElement.tagName === 'INPUT') {
+                        return NodeFilter.FILTER_REJECT;
+                    }
+                    // Skip if parent is already our highlight wrapper
+                    if (node.parentElement.classList.contains('bg-[#14B8A6]')) {
+                         return NodeFilter.FILTER_REJECT;
+                    }
+                    return NodeFilter.FILTER_ACCEPT;
+                }
+            });
+
+            const nodesToHighlight = [];
+            while(walk.nextNode()) {
+                if (walk.currentNode.nodeValue.toLowerCase().includes(term.toLowerCase())) {
+                    nodesToHighlight.push(walk.currentNode);
+                }
+            }
+
+            nodesToHighlight.forEach(node => {
+                const regex = new RegExp(`(${escapeRegExp(term)})`, 'gi');
+                // We create a temp container to parse HTML
+                const fragment = document.createDocumentFragment();
+                const parts = node.nodeValue.split(regex);
+                
+                parts.forEach(part => {
+                     if (part.toLowerCase() === term.toLowerCase()) {
+                         const span = document.createElement('span');
+                         span.className = 'bg-[#14B8A6] text-white search-highlight-wrapper';
+                         span.textContent = part;
+                         fragment.appendChild(span);
+                     } else {
+                         fragment.appendChild(document.createTextNode(part));
+                     }
+                });
+                
+                node.parentNode.replaceChild(fragment, node);
+            });
+        }
+
+        function removeHighlights() {
+            const wrappers = document.querySelectorAll('.search-highlight-wrapper');
+            wrappers.forEach(wrapper => {
+                const parent = wrapper.parentNode;
+                parent.replaceChild(document.createTextNode(wrapper.textContent), wrapper);
+                // After replacement, we might have adjacent text nodes, which is fine, 
+                // but normalizing parent could be cleaner.
+                parent.normalize();
+            });
+        }
+
+        function escapeRegExp(string) {
+            return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+    });
+</script>
