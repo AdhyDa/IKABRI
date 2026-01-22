@@ -25,7 +25,7 @@
                         Proker
                         <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </x-nav-link>
-                    <x-nav-link href="#">
+                    <x-nav-link href="{{ route('galeri') }}" :active="request()->routeIs('galeri')">
                         Galeri
                         <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </x-nav-link>
@@ -79,7 +79,7 @@
             <a href="{{ route('home') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('home') ? 'text-secondary' : 'text-primary-text dark:text-primary-text-dark hover:text-secondary' }} hover:bg-gray-50 dark:hover:bg-gray-800">Beranda</a>
             <a href="{{ route('profil') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('profil') ? 'text-secondary' : 'text-primary-text dark:text-primary-text-dark hover:text-secondary' }} hover:bg-gray-50 dark:hover:bg-gray-800">Profil</a>
             <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-primary-text dark:text-primary-text-dark hover:text-secondary hover:bg-gray-50 dark:hover:bg-gray-800">Proker</a>
-            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-primary-text dark:text-primary-text-dark hover:text-secondary hover:bg-gray-50 dark:hover:bg-gray-800">Galeri</a>
+            <a href="{{ route('galeri') }}" class="block px-3 py-2 rounded-md text-base font-medium {{ request()->routeIs('galeri') ? 'text-secondary' : 'text-primary-text dark:text-primary-text-dark hover:text-secondary' }} hover:bg-gray-50 dark:hover:bg-gray-800">Galeri</a>
         </div>
     </div>
 </nav>

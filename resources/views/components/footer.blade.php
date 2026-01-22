@@ -57,7 +57,7 @@
                     <li><a href="{{ route('home') }}" class="hover:underline hover:opacity-100 transition-opacity">Beranda</a></li>
                     <li><a href="{{ route('profil') }}" class="hover:underline hover:opacity-100 transition-opacity">Profil</a></li>
                     <li><a href="{{ route('proker') }}" class="hover:underline hover:opacity-100 transition-opacity">Program Kerja</a></li>
-                    <li><a href="#" class="hover:underline hover:opacity-100 transition-opacity">Galeri</a></li>
+                    <li><a href="{{ route('galeri') }}" class="hover:underline hover:opacity-100 transition-opacity">Galeri</a></li>
                 </ul>
             </div>
 
