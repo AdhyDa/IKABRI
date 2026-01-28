@@ -1,4 +1,4 @@
-<section class="py-16 bg-[var(--color-ua-section-bg)] dark:bg-[var(--color-ua-section-bg-dark)] transition-colors duration-300 relative overflow-hidden h-[800px] flex flex-col">
+<section id="update-agenda" class="py-16 bg-[var(--color-ua-section-bg)] dark:bg-[var(--color-ua-section-bg-dark)] transition-colors duration-300 relative overflow-hidden h-[800px] flex flex-col">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex-shrink-0">
         <!-- Header -->
         <div class="flex justify-between items-end mb-8 md:mb-12">

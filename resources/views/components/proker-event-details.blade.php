@@ -1,4 +1,4 @@
-<section class="py-12 mb-20 relative z-10">
+<section id="proker-event-details" class="py-12 mb-20 relative z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 relative">
 

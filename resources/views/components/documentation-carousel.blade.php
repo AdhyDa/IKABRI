@@ -1,4 +1,4 @@
-<section id="doc-carousel-section" class="py-16 bg-main-bg dark:bg-main-bg-dark overflow-hidden transition-colors duration-300 relative">
+<section id="documentation-carousel" class="py-16 bg-main-bg dark:bg-main-bg-dark overflow-hidden transition-colors duration-300 relative">
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12 relative z-10">
         <h2 class="text-4xl md:text-5xl font-extrabold font-heading text-doc-header dark:text-doc-header-dark mb-4 drop-shadow-sm uppercase">

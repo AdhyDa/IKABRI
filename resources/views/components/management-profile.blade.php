@@ -1,7 +1,7 @@
-<section id="management-profile" class="mt-50 py-50 bg-[#F4F1FF] dark:bg-main-bg-dark transition-colors duration-300">
+<section class="mt-50 py-50 bg-[#F4F1FF] dark:bg-main-bg-dark transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-4xl md:text-5xl font-extrabold font-heading text-[#F59E0B] mb-4 uppercase tracking-wide">
+            <h2 id="management-profile" class="text-4xl md:text-5xl font-extrabold font-heading text-[#F59E0B] mb-4 uppercase tracking-wide">
                 KENALI TIM KAMI
             </h2>
             <p class="text-lg text-[#0F172A] dark:text-[#F8FAFC] font-body opacity-80 mb-8">
@@ -214,7 +214,7 @@
             const rounded = isLarge ? 'rounded-[24px]' : 'rounded-[20px]';
             const border = 'border-[5px] border-[#7C3AED]';
             const bg = 'bg-white dark:bg-[#1E293B]';
-            
+
             return `
                 <div class="profile-card opacity-0 flex-shrink-0 flex flex-col mx-auto relative group perspective-container" style="${widthStyle} ${heightStyle}">
                     <div class="tilt-frame w-full h-full ${bg} ${rounded} overflow-hidden ${border} shadow-lg flex flex-col transition-transform duration-100 ease-out" style="transform-style: preserve-3d;">
@@ -248,7 +248,7 @@
             // 2. GSAP Animation
             const tl = gsap.timeline();
             const currentCards = document.querySelectorAll('.profile-card');
-            
+
             tl.to([titleEl, ...currentCards], {
                 duration: 0.3, x: -50, autoAlpha: 0, stagger: 0.05, ease: "power2.in"
             });
@@ -258,7 +258,7 @@
                 gsap.set(titleEl, { x: 50, autoAlpha: 0 });
 
                 const cardsContainer = document.getElementById('cards-container');
-                
+
                 if (data.layout === 'bph') {
                     const m = data.members;
                     cardsContainer.innerHTML = `
@@ -292,32 +292,32 @@
                 gsap.to(newCards, {
                     duration: 0.5, x: 0, autoAlpha: 1, stagger: 0.1, ease: "back.out(1.2)", delay: 0.1
                 });
-                
+
                 refreshTiltEffect();
             });
         }
 
         // TILT EFFECT LOGIC (Vanilla JS)
-        function refreshTiltEffect() {          
+        function refreshTiltEffect() {
             const cards = document.querySelectorAll('.perspective-container');
-            
+
             cards.forEach(card => {
                 const frame = card.querySelector('.tilt-frame');
-                
+
                 card.addEventListener('mousemove', (e) => {
                     const rect = card.getBoundingClientRect();
                     const x = e.clientX - rect.left;
                     const y = e.clientY - rect.top;
-                    
+
                     const centerX = rect.width / 2;
                     const centerY = rect.height / 2;
-                    
+
                     const rotateX = ((y - centerY) / centerY) * -10; // Inverted for natural feel
                     const rotateY = ((x - centerX) / centerX) * 10;
-                    
+
                     frame.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
                 });
-                
+
                 card.addEventListener('mouseleave', () => {
                     frame.style.transform = `rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
                 });
@@ -328,11 +328,11 @@
             const titleEl = document.getElementById('division-title');
             const cards = document.querySelectorAll('.profile-card');
             gsap.set([titleEl, ...cards], { x: 50, autoAlpha: 0 });
-            
+
             const tl = gsap.timeline({ delay: 0.5 });
             tl.to(titleEl, { duration: 0.5, x: 0, autoAlpha: 1, ease: "power2.out" })
                 .to(cards, { duration: 0.5, x: 0, autoAlpha: 1, stagger: 0.1, ease: "back.out(1.2)" }, "-=0.3");
-            
+
             refreshTiltEffect();
         });
     </script>

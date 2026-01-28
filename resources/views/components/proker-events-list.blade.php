@@ -1,14 +1,14 @@
 <section class="py-12 mb-20 relative z-10 text-[#0F172A] dark:text-[#F8FAFC]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <!-- UPCOMING EVENT -->
-        <h3 class="text-3xl font-bold font-heading mb-8">Upcoming Event</h3>
-        
+        <h3 id="proker-upcoming" class="text-3xl font-bold font-heading mb-8">Upcoming Event</h3>
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
             <!-- Card 1 -->
-            <div class="group bg-white dark:bg-[#1E293B] rounded-[20px] overflow-hidden 
-                        shadow-[3px_10px_20px_rgba(0,0,0,0.25)] 
-                        dark:shadow-[3px_10px_20px_rgba(124,58,237,0.25)] 
+            <div class="group bg-white dark:bg-[#1E293B] rounded-[20px] overflow-hidden
+                        shadow-[3px_10px_20px_rgba(0,0,0,0.25)]
+                        dark:shadow-[3px_10px_20px_rgba(124,58,237,0.25)]
                         dark:border-[3px] dark:border-[#431E82] transition-colors duration-300">
                 <!-- Image Placeholder -->
                 <!-- Image Placeholder -->
@@ -28,9 +28,9 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="group bg-white dark:bg-[#1E293B] rounded-[20px] overflow-hidden 
-                        shadow-[3px_10px_20px_rgba(0,0,0,0.25)] 
-                        dark:shadow-[3px_10px_20px_rgba(124,58,237,0.25)] 
+            <div class="group bg-white dark:bg-[#1E293B] rounded-[20px] overflow-hidden
+                        shadow-[3px_10px_20px_rgba(0,0,0,0.25)]
+                        dark:shadow-[3px_10px_20px_rgba(124,58,237,0.25)]
                         dark:border-[3px] dark:border-[#431E82] transition-colors duration-300">
                 <div class="h-64 bg-gray-200 dark:bg-gray-700 overflow-hidden">
                     <img src="{{ asset('image/placeholder.jpg') }}" alt="Event Placeholder" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
@@ -47,9 +47,9 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="group bg-white dark:bg-[#1E293B] rounded-[20px] overflow-hidden 
-                        shadow-[3px_10px_20px_rgba(0,0,0,0.25)] 
-                        dark:shadow-[3px_10px_20px_rgba(124,58,237,0.25)] 
+            <div class="group bg-white dark:bg-[#1E293B] rounded-[20px] overflow-hidden
+                        shadow-[3px_10px_20px_rgba(0,0,0,0.25)]
+                        dark:shadow-[3px_10px_20px_rgba(124,58,237,0.25)]
                         dark:border-[3px] dark:border-[#431E82] transition-colors duration-300">
                 <div class="h-64 bg-gray-200 dark:bg-gray-700 overflow-hidden">
                     <img src="{{ asset('image/placeholder.jpg') }}" alt="Event Placeholder" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
@@ -67,13 +67,13 @@
         </div>
 
         <!-- COMPLETED EVENT -->
-        <h3 class="text-3xl font-bold font-heading mb-8">Completed Event</h3>
-        
+        <h3 id="proker-completed" class="text-3xl font-bold font-heading mb-8">Completed Event</h3>
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Card 1 -->
-            <div class="group bg-white dark:bg-[#1E293B] rounded-[20px] overflow-hidden 
-                        shadow-[3px_10px_20px_rgba(0,0,0,0.25)] 
-                        dark:shadow-[3px_10px_20px_rgba(124,58,237,0.25)] 
+            <div class="group bg-white dark:bg-[#1E293B] rounded-[20px] overflow-hidden
+                        shadow-[3px_10px_20px_rgba(0,0,0,0.25)]
+                        dark:shadow-[3px_10px_20px_rgba(124,58,237,0.25)]
                         dark:border-[3px] dark:border-[#431E82] transition-colors duration-300">
                 <div class="h-64 bg-gray-200 dark:bg-gray-700 overflow-hidden">
                     <img src="{{ asset('image/placeholder.jpg') }}" alt="Event Placeholder" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">

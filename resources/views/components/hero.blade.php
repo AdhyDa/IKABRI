@@ -18,11 +18,11 @@
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-                    <a href="#" class="inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-white bg-accent hover:bg-violet-700 rounded-full transition-all hover:shadow-lg hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent">
+                    <a href="{{ route('proker') }}" class="inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-white bg-accent hover:bg-violet-700 rounded-full transition-all hover:shadow-lg hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent">
                         Jelajahi Proker
                     </a>
 
-                    <a href="#" class="inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-primary-text dark:text-primary-text-dark bg-transparent border border-accent dark:border-accent-dark rounded-full hover:bg-accent/5 dark:hover:bg-accent-dark/10 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent">
+                    <a href="{{ route('profil') }}" class="inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-primary-text dark:text-primary-text-dark bg-transparent border border-accent dark:border-accent-dark rounded-full hover:bg-accent/5 dark:hover:bg-accent-dark/10 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent">
                         Kenali Kami
                     </a>
                 </div>
