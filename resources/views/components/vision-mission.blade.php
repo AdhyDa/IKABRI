@@ -1,4 +1,4 @@
-<section class="mt-50 py-16 bg-white dark:bg-[#1E293B] border-y border-[#340958] dark:border-none transition-colors duration-300">
+<section id="vision-mission" class="mt-50 py-16 bg-white dark:bg-[#1E293B] border-y border-[#340958] dark:border-none transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             <div>

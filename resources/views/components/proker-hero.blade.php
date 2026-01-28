@@ -1,4 +1,4 @@
-<section class="py-12 mt-10">
+<section id="proker-hero" class="py-12 mt-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- HEADER: Outside Background Layer -->
         <h2 class="text-3xl md:text-3xl font-bold text-[#0F172A] dark:text-[#F8FAFC] mb-6 text-left font-heading">

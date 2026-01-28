@@ -1,4 +1,4 @@
-<section class="py-50 bg-main-bg dark:bg-main-bg-dark transition-colors duration-300">
+<section id="bento-stats" class="py-50 bg-main-bg dark:bg-main-bg-dark transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
@@ -79,7 +79,6 @@
                     </p>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
