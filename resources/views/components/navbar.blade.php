@@ -20,7 +20,7 @@
                             <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </x-nav-link>
                         <div class="absolute top-full left-0 w-56 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 z-50">
-                            <div class="bg-white dark:bg-navbar-bg-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 overflow-hidden py-2 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
+                            <div class="bg-white dark:bg-navbar-bg-dark shadow-2xl border border-gray-100 dark:border-gray-700 overflow-hidden py-2 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
                                 <a href="{{ route('home') }}#bento-stats" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
                                     Statistik & Jaringan
                                 </a>
@@ -44,7 +44,7 @@
                             <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </x-nav-link>
                         <div class="absolute top-full left-0 w-64 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 z-50">
-                            <div class="bg-white dark:bg-navbar-bg-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 py-2 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
+                            <div class="bg-white dark:bg-navbar-bg-dark shadow-2xl border border-gray-100 dark:border-gray-700 py-2 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
                                 <a href="{{ route('profil') }}#profile-hero" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
                                     Tentang IKABRI
                                 </a>
@@ -61,7 +61,7 @@
 
                                     <!-- Sub-Dropdown (Opens Left) -->
                                     <div class="absolute top-0 right-full w-60 mr-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-4 group-hover/sub:translate-x-0">
-                                        <div class="bg-white dark:bg-navbar-bg-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 overflow-hidden py-2 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
+                                        <div class="bg-white dark:bg-navbar-bg-dark shadow-2xl border border-gray-100 dark:border-gray-700 overflow-hidden py-2 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
                                             <a href="{{ route('profil') }}?tab=bph#management-profile" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
                                                 Badan Pengurus Harian (BPH)
                                             </a>
@@ -94,7 +94,7 @@
                             <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </x-nav-link>
                         <div class="absolute top-full left-0 w-56 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 z-50">
-                            <div class="bg-white dark:bg-navbar-bg-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 overflow-hidden py-2 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
+                            <div class="bg-white dark:bg-navbar-bg-dark shadow-2xl border border-gray-100 dark:border-gray-700 overflow-hidden py-2 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
                                 <a href="{{ route('proker') }}#proker-hero" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
                                     Ongoing Event
                                 </a>
@@ -118,7 +118,7 @@
                             <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </x-nav-link>
                         <div class="absolute top-full left-0 w-72 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 z-50">
-                            <div class="bg-white dark:bg-navbar-bg-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 overflow-hidden py-2 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
+                            <div class="bg-white dark:bg-navbar-bg-dark shadow-2xl border border-gray-100 dark:border-gray-700 overflow-hidden py-2 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
                                 <a href="{{ route('galeri') }}?folder=BPH" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
                                     Badan Pengurus Harian (BPH)
                                 </a>

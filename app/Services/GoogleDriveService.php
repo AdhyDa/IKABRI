@@ -18,8 +18,8 @@ class GoogleDriveService
         'HUMINFO' => '1xxxxxxxxxxxxxx_YOUR_FOLDER_ID_HERE',
         'PENALARAN' => '1xxxxxxxxxxxxxx_YOUR_FOLDER_ID_HERE',
         'BAKMIN' => '1f7QRx9vlLueEmCIiHFtmt0Zn9cSJ6lM-',
-        'PENGMAS' => '1xxxxxxxxxxxxxx_YOUR_FOLDER_ID_HERE',
-        'ORGANISASI' => '1xxxxxxxxxxxxxx_YOUR_FOLDER_ID_HERE',
+        'PENGMAS' => '1y4zVjjWLLv1haKU2NeSNSTq074T0CyHM',
+        'ORGANISASI' => '13lJgU9wxiX533PjSbzD8ooW8_9iNGO0y',
     ];
 
     public function __construct()

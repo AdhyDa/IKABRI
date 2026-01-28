@@ -53,11 +53,11 @@
             <!-- Bottom Area: Arrow + Additional Text -->
             <div class="absolute bottom-4 left-4 right-4 md:bottom-[20px] md:left-[10px] md:right-[50px] z-30 flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-15">
                 <!-- Arrow Button -->
-                <button class="flex-shrink-0 w-16 h-16 md:w-30 md:h-30 rounded-full flex items-center justify-center transition-transform hover:scale-110 shadow-lg bg-[#7C3AED] dark:bg-[#5A28AF] text-white cursor-pointer">
+                <a href="#vision-mission" class="flex-shrink-0 w-16 h-16 md:w-30 md:h-30 rounded-full flex items-center justify-center transition-transform hover:scale-110 shadow-lg bg-[#7C3AED] dark:bg-[#5A28AF] text-white cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:h-20 md:w-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                     </svg>
-                </button>
+                </a>
 
                 <!-- Additional Text -->
                 <div class="max-w-full hidden md:block max-w-2xl text-sm md:text-base text-[#0F172A] dark:text-[#F8FAFC] opacity-70 dark:opacity-90 font-medium leading-relaxed">
