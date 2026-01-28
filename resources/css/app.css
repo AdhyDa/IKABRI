@@ -1,0 +1,108 @@
+@import 'tailwindcss';
+
+@variant dark (&:where(.dark, .dark *));
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-heading: 'Plus Jakarta Sans', sans-serif;
+    --font-proker: 'Poppins', sans-serif;
+    --font-body: 'Outfit', sans-serif;
+    --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+
+    --color-navbar-bg: #ffffff;
+    --color-navbar-bg-dark: #2D1B54;
+
+    --color-hero-gradient-start: #7C3AED;
+    --color-hero-gradient-start-dark: #431E82;
+
+    --color-hero-gradient-end: #ffffff;
+    --color-hero-gradient-end-dark: #ffffff;
+
+    --color-main-bg: #E9E6FA;
+    --color-main-bg-dark: #0F172A;
+
+    --color-primary-text: #0F172A;
+    --color-primary-text-dark: #F8FAFC;
+
+    --color-secondary: #F59E0B;
+
+    --color-accent: #7C3AED;
+    --color-accent-dark: #A78BFA;
+
+    --color-bento-purple: #7C3AED;
+    --color-bento-purple-dark: #431E82;
+    --color-bento-alumni: #D6CEFF;
+    --color-bento-alumni-dark: #1E293B;
+    --color-bento-progja-dark: #A497BE;
+    --color-bento-border: #334155;
+
+    --color-doc-header: #7C3AED;
+    --color-doc-header-dark: #A78BFA;
+
+    /* Update & Agenda Section */
+    --color-ua-section-bg: #7C3AED;
+    --color-ua-section-bg-dark: #745FB3;
+
+    --color-ua-card-bg: #ffffff;
+    --color-ua-card-bg-dark: #D5CAE9;
+
+    --color-ua-text: #1E1B4B;
+    --color-ua-text-dark: #373279;
+
+    --color-ua-tag-bg: #D9D9D9;
+    --color-ua-tag-bg-dark: #E9E2F4;
+
+    --color-ua-tag-text: #F59E0B;
+
+    --color-ua-inactive: #431E82;
+    --color-ua-inactive-dark: #251246;
+
+    /* Footer Section */
+    --color-footer-bg: #7C3AED;
+    --color-footer-bg-dark: #5A28AF;
+
+    --color-footer-bottom: #431E82;
+    --color-footer-bottom-dark: #251246;
+
+    --color-footer-text: #ffffff;
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+.animate-scroll-left {
+    animation: scroll-left 60s linear infinite;
+}
+
+.animate-scroll-right {
+    animation: scroll-right 60s linear infinite;
+}
+
+/* Pause State (Active via JS) */
+.is-paused .animate-scroll-left,
+.is-paused .animate-scroll-right {
+    animation-play-state: paused;
+}
+
+/* Active Item Z-Index */
+.carousel-item.active {
+    z-index: 50;
+    transform: scale(1.1);
+}
+
+/* Label Visibility on Active */
+.carousel-item.active .carousel-label {
+    opacity: 1;
+    pointer-events: auto;
+}
