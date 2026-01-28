@@ -15,20 +15,11 @@ class GalleryController extends Controller
     }
 
     /**
-     * Get sub-folders for a division.
+     * Get content (folders and photos) for a specific folder ID or Division Name.
      */
-    public function getFolders($division)
+    public function getContent($id)
     {
-        $data = $this->driveService->getSubFolders($division);
-        return response()->json(['status' => 'success', 'data' => $data]);
-    }
-
-    /**
-     * Get photos for a specific folder.
-     */
-    public function getPhotos($folderId)
-    {
-        $data = $this->driveService->getPhotos($folderId);
+        $data = $this->driveService->getFolderContents($id);
         return response()->json(['status' => 'success', 'data' => $data]);
     }
 }

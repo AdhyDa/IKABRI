@@ -12,23 +12,134 @@
             </div>
 
             <div class="hidden lg:flex items-center space-x-8">
-                <div class="flex space-x-6">
-                    <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
-                        Beranda
-                        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                    </x-nav-link>
-                    <x-nav-link href="{{ route('profil') }}" :active="request()->routeIs('profil')">
-                        Profil
-                        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                    </x-nav-link>
-                    <x-nav-link href="{{ route('proker') }}" :active="request()->routeIs('proker')">
-                        Proker
-                        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                    </x-nav-link>
-                    <x-nav-link href="{{ route('galeri') }}" :active="request()->routeIs('galeri')">
-                        Galeri
-                        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                    </x-nav-link>
+    <div class="flex space-x-6">
+                    <!-- Beranda Dropdown -->
+                    <div class="relative group">
+                        <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
+                            Beranda
+                            <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </x-nav-link>
+                        <div class="absolute top-full left-0 w-56 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 z-50">
+                            <div class="bg-white dark:bg-navbar-bg-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 overflow-hidden py-2 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
+                                <a href="{{ route('home') }}#bento-stats" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                    Statistik & Jaringan
+                                </a>
+                                <a href="{{ route('home') }}#documentation-carousel" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                    Galeri Kegiatan
+                                </a>
+                                <a href="{{ route('home') }}#organization-structure" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                    Struktur Organisasi
+                                </a>
+                                <a href="{{ route('home') }}#update-agenda" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors">
+                                    Update & Agenda
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profil Dropdown -->
+                    <div class="relative group">
+                        <x-nav-link href="{{ route('profil') }}" :active="request()->routeIs('profil')">
+                            Profil
+                            <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </x-nav-link>
+                        <div class="absolute top-full left-0 w-64 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 z-50">
+                            <div class="bg-white dark:bg-navbar-bg-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 overflow-hidden py-2 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
+                                <a href="{{ route('profil') }}#profile-hero" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                    Tentang IKABRI
+                                </a>
+                                <a href="{{ route('profil') }}#vision-mission" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                    Visi & Misi
+                                </a>
+                                
+                                <!-- Nested Sub-Menu -->
+                                <div class="relative group/sub">
+                                    <button class="w-full text-left flex items-center justify-between px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors">
+                                        Kenali Divisi Kami
+                                        <svg class="w-4 h-4 transition-transform duration-300 -rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    
+                                    <!-- Sub-Dropdown (Opens Left) -->
+                                    <div class="absolute top-0 right-full w-60 mr-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-4 group-hover/sub:translate-x-0">
+                                        <div class="bg-white dark:bg-navbar-bg-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 overflow-hidden py-2 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
+                                            <a href="{{ route('profil') }}?tab=bph" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                                Badan Pengurus Harian
+                                            </a>
+                                            <a href="{{ route('profil') }}?tab=huminfo" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                                Divisi Huminfo
+                                            </a>
+                                            <a href="{{ route('profil') }}?tab=penalaran" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                                Divisi Penalaran
+                                            </a>
+                                            <a href="{{ route('profil') }}?tab=bakmin" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                                Divisi Bakmin
+                                            </a>
+                                            <a href="{{ route('profil') }}?tab=pengmas" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                                Divisi Pengmas
+                                            </a>
+                                            <a href="{{ route('profil') }}?tab=organisasi" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors">
+                                                Divisi Organisasi
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proker Dropdown -->
+                    <div class="relative group">
+                        <x-nav-link href="{{ route('proker') }}" :active="request()->routeIs('proker')">
+                            Proker
+                            <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </x-nav-link>
+                        <div class="absolute top-full left-0 w-56 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 z-50">
+                            <div class="bg-white dark:bg-navbar-bg-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 overflow-hidden py-2 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
+                                <a href="{{ route('proker') }}#proker-hero" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                    Ongoing Event
+                                </a>
+                                <a href="{{ route('proker') }}#proker-event-details" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                    Detail Event
+                                </a>
+                                <a href="{{ route('proker') }}#proker-upcoming" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                    Upcoming Event
+                                </a>
+                                <a href="{{ route('proker') }}#proker-completed" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                    Completed Event
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Galeri Dropdown -->
+                    <div class="relative group">
+                        <x-nav-link href="{{ route('galeri') }}" :active="request()->routeIs('galeri')">
+                            Galeri
+                            <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </x-nav-link>
+                        <div class="absolute top-full left-0 w-72 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 z-50">
+                            <div class="bg-white dark:bg-navbar-bg-dark rounded-2xl shadow-2xl border border-gray-100 dark:border-gray-700 overflow-hidden py-2 backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
+                                <a href="{{ route('galeri') }}?folder=BPH" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                    Badan Pengurus Harian (BPH)
+                                </a>
+                                <a href="{{ route('galeri') }}?folder=HUMINFO" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                    Divisi Huminfo
+                                </a>
+                                <a href="{{ route('galeri') }}?folder=PENALARAN" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                    Divisi Penalaran
+                                </a>
+                                <a href="{{ route('galeri') }}?folder=BAKMIN" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                    Divisi Bakmin
+                                </a>
+                                <a href="{{ route('galeri') }}?folder=PENGMAS" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                    Divisi Pengmas
+                                </a>
+                                <a href="{{ route('galeri') }}?folder=ORGANISASI" class="block px-5 py-3 text-sm font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-secondary transition-colors">
+                                    Divisi Organisasi
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Actions -->
