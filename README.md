@@ -4,7 +4,7 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?style=for-the-badge&logo=tailwind-css)
 ![Google Drive API](https://img.shields.io/badge/Google_Drive_API-Integration-4285F4?style=for-the-badge&logo=google-drive)
 
-**Official Website of IKABRI (Ikatan Keluarga Mahasiswa Kediri - Universitas Brawijaya).**
+**Official Website of IKABRI (Ikatan Bocah Kediri) Universitas Negeri Malang.**
 
 Platform ini dikembangkan untuk menjadi pusat informasi, branding, dan dokumentasi kegiatan organisasi mahasiswa daerah Kediri di Universitas Brawijaya. Website ini mengintegrasikan desain modern dengan manajemen aset berbasis Cloud.
 
