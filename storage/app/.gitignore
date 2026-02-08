@@ -1,0 +1,8 @@
+*
+!private/
+!public/
+!.gitignore
+
+*.json
+!composer.json
+!package.json
