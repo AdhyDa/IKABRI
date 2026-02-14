@@ -90,7 +90,7 @@
     <!-- Bottom Bar -->
     <div class="bg-[var(--color-footer-bottom)] dark:bg-[var(--color-footer-bottom-dark)] py-7 text-center">
         <p class="font-body text-10sm opacity-90">
-            &copy; 2025 IKABRI UM. Developed by Divisi Huminfo
+            &copy; 2026 IKABRI UM. Developed by Divisi Huminfo
         </p>
     </div>
 </footer>
