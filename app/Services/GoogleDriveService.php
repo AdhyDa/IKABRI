@@ -12,7 +12,7 @@ class GoogleDriveService
     protected $client;
     protected $service;
     protected $divisionFolders = [
-        'BPH' => '1xxxxxxxxxxxxxx_YOUR_FOLDER_ID_HERE',
+        'BPH' => '1IAe_Ra9YEzmlPC6naZXtzUxaUoDQJu7I',
         'HUMINFO' => '1xazr6_1blqK6KhyXDXQSE7SSlkBppg1x',
         'PENALARAN' => '1xxxxxxxxxxxxxx_YOUR_FOLDER_ID_HERE',
         'BAKMIN' => '1IBujP6s4bJeqh0wZxlKEjcc-63hWPAof',
