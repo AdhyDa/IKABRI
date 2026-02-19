@@ -10,7 +10,7 @@
             <!-- 1. BACKGROUND LAYER CONTAINER -->
             <div class="relative w-full rounded-[30px] overflow-hidden min-h-[850px] flex items-center z-10">
                 <div class="absolute inset-0 z-0">
-                    <img src="{{ asset('image/gutenham.jpg') }}" alt="Background" class="w-full h-full object-cover blur-[2.5px]">
+                    <img src="{{ asset('image/mubes-bg.jpeg') }}" alt="Background" class="w-full h-full object-cover blur-[2.5px]">
                 </div>
 
                 <!-- Overlay -->
@@ -19,13 +19,13 @@
                 <div class="relative z-20 w-full p-8 lg:p-16 flex flex-col md:flex-row gap-8 md:gap-12 items-center pb-40">
                     <!-- Left: Poster Image -->
                     <div class="flex-shrink-0 w-full md:w-[491px] lg:w-[491px] -mt-16">
-                        <img src="{{ asset('image/fotografi.jpg') }}" alt="Event Poster" class="w-full h-auto rounded-[20px] shadow-2xl">
+                        <img src="{{ asset('image/mubes.jpeg') }}" alt="Event Poster" class="w-full h-auto rounded-[20px] shadow-2xl">
                     </div>
 
                     <!-- Right: Title Only -->
                     <div class="flex-grow text-white">
                         <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold font-proker mb-4 leading-tight">
-                            Pelatihan fotografi
+                            Musyawarah Besar 2026
                             <!--
                             <br>
                             "Solidaritas Bersinar, Sportivitas Berkibar, Semangat Juang Berkobar"
@@ -51,7 +51,7 @@
                     <!-- Col 2: Lokasi -->
                     <div class="flex-1">
                         <h4 class="text-white/80 text-sm mb-1">Lokasi</h4>
-                        <p class="font-bold text-lg leading-tight">Gutenham Coffe House</p>
+                        <p class="font-bold text-lg leading-tight">Rumah kak Sayyid</p>
                     </div>
 
                         <!-- Separator -->
@@ -60,7 +60,7 @@
                     <!-- Col 3: Tanggal -->
                     <div class="flex-1">
                         <h4 class="text-white/80 text-sm mb-1">Tanggal Pelaksanaan</h4>
-                        <p class="font-bold text-lg leading-tight">05 Februari 2026</p>
+                        <p class="font-bold text-lg leading-tight">16 Februari 2026</p>
                     </div>
                 </div>
             </div>
